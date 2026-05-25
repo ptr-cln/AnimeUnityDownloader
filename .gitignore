@@ -1,0 +1,14 @@
+# Ignore downloads and logs
+downloads/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+.env
+
+# Editor
+.vscode/
+.idea/
