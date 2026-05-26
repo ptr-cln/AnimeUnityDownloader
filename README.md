@@ -33,6 +33,8 @@ Uso
 python animeunity_downloader.py <anime_url> <range> [--output OUTPUT] [--workers N]
 ```
 
+Se esegui lo script senza argomenti, si apre un'interfaccia grafica minimale per inserire l'URL dell'anime, selezionare gli episodi, avviare il download e leggere i log.
+
 Esempio:
 
 ```bash
@@ -42,6 +44,7 @@ python animeunity_downloader.py https://www.animeunity.so/anime/743-detective-co
 Note
 - Il parametro `--workers` ha valore di default 4 (scarica 4 episodi in parallelo).
 - I log vengono scritti in `downloads/<slug>/animeunity_downloader.log`.
+- Alcuni episodi possono comparire con nomi generici (es. `DetectiveConan_Ep_0145_ITA.mp4`). Il downloader utilizza il nome fornito dal sito (`file_name`) quando è presente; altrimenti usa il valore `link` o un fallback `episode_###.mp4`.
 
 Limitazioni
 - Il programma non tenta l'auth su siti protetti; funziona su embed pubblici raggiungibili.
