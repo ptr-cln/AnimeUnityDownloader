@@ -35,11 +35,23 @@ python animeunity_downloader.py <anime_url> <range> [--output OUTPUT] [--workers
 
 Se esegui lo script senza argomenti, si apre un'interfaccia grafica minimale per inserire l'URL dell'anime, selezionare gli episodi, avviare il download e leggere i log.
 
-Esempio:
+Esempio CLI:
 
 ```bash
 python animeunity_downloader.py https://www.animeunity.so/anime/743-detective-conan 1-12 -o downloads -w 4
 ```
+
+Esempio GUI:
+
+```bash
+python animeunity_downloader.py
+```
+
+Questa modalità apre una finestra in cui puoi:
+- incollare l'URL dell'anime
+- inserire il range di episodi
+- scegliere la cartella di output
+- avviare il download e visualizzare i log in tempo reale
 
 Note
 - Il parametro `--workers` ha valore di default 4 (scarica 4 episodi in parallelo).
